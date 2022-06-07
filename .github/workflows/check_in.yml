@@ -9,7 +9,7 @@ jobs:
     steps:
       # See also: https://github.com/actions/checkout/issues/760
       - name: work around permission issue
-        run: git config --global --add safe.directory /github/workspace
+        run: git config --global --add safe.directory *
 
       # 切换分支
       - name: Checkout
